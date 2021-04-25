@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
-user=$@
+user=$1
 cmd=$0
-echo "You are running cmd $cmd :hello $user"
+useradd $user
+echo "HELLO USER $user CREATED..."
