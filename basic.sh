@@ -1,6 +1,9 @@
 #!/usr/bin/bash
 
-user=$1
+user=$@
 cmd=$0
-useradd $user
-echo "HELLO USER $user CREATED..."
+for i in $user
+do
+ useradd $i
+ echo "HELLO USER $i CREATED..."
+done
